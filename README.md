@@ -2,8 +2,6 @@
   <img src="axilotl_logo.png" alt="axilotl logo" width="600">
 </p>
 
-# axilotl
-
 `axilotl` is a halo-model code that computes angular power spectra for patchy dark screening -- the conversion of CMB photons into axions or dark photons the ionized gas of dark-matter halos. Theoretical and observational details are provided in the following references:
 * [arXiv:2307.15124](https://arxiv.org/abs/2307.15124)
 * [arXiv:2405.08059](https://arxiv.org/abs/2405.08059) 
