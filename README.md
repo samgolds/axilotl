@@ -4,14 +4,13 @@
 
 # axilotl
 
-`axilotl` is a halo-model code for angular power spectra for patchy dark screening: the conversion of CMB photons into axions or dark photons the ionized gas of dark-matter halos. Theoretical and observational details are provided in the following references:
+`axilotl` is a halo-model code that computes angular power spectra for patchy dark screening -- the conversion of CMB photons into axions or dark photons the ionized gas of dark-matter halos. Theoretical and observational details are provided in the following references:
 * [arXiv:2307.15124](https://arxiv.org/abs/2307.15124)
 * [arXiv:2405.08059](https://arxiv.org/abs/2405.08059) 
 * [arXiv:2406.02546](https://arxiv.org/abs/2406.02546)
 * [arXiv:2409.10514](https://arxiv.org/pdf/2409.10514)
 
-Note that the code hasn't been optimized and isn't particularly fast. This
-is largely pragmatic, but, *more importantly*, is consistent with the code's namesake.
+Note that the code hasn't been optimized and isn't particularly fast. This is partly because there is  no need for a fast dark-screening code, but, *more importantly*, is consistent with the code's namesake.
 Indeed, according to ChatGPT, "Axolotls aren't particularly fast swimmers since they
 rely on their feathery gills and tail for slow movement. While there's no
 precise measurement of their "top speed," axolotls generally swim at speeds
@@ -26,8 +25,8 @@ predation than for speed."
 Given a halo-model backend (mass function, bias model, concentration, linear
 power spectrum from [`hmvec`](https://github.com/msyriac/hmvec)), a gas
 density profile, and a magnetic-field model (not needed for dark photons), `axilotl` builds the
-resonant-conversion optical depth `tau_ell(z, M)` for axion-photon or
-dark-photon mixing and computes the following power spectra:
+resonant-conversion optical depth `tau_ell(z, M)` for axion-photon oscillations or
+photon-dark-photon mixing and can compute the following power spectra:
 
 - `Cl_TT`  — dark-screening temperature auto-spectrum
 - `Cl_Tg`  — dark-screening temperature x galaxy cross-spectrum
